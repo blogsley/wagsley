@@ -1,0 +1,27 @@
+.env
+.prod.env
+.dev.env
+
+.idea
+.vscode
+__pycache__
+.pyc
+env
+.eggs
+*.egg-info
+
+build/
+_build
+
+db.sqlite3
+
+node_modules
+
+polrev/static
+polrev/media
+letsencrypt
+
+# celery beat schedule file
+celerybeat-schedule
+
+docker-compose.override.yml

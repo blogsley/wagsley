@@ -1,0 +1,29 @@
+type PostConnection {
+  edges: [PostEdge!]!
+  pageInfo: PageInfo!
+}
+
+type PostEdge {
+  cursor: String!
+  node: Post!
+}
+
+scalar Block
+
+type Post {
+  id: ID!
+  title: String!
+  block: Block!
+  body: String!
+}
+
+input PostInput {
+  title: String!
+  block: String!
+  body: String!
+}
+
+type PostEvent {
+  kind: String!
+  ok: Boolean!
+}
