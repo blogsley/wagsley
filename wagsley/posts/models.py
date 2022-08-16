@@ -1,0 +1,1 @@
+from puput.models import BlogPage as Blog, EntryPage as Post

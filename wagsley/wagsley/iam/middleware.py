@@ -22,7 +22,7 @@ class TokenAuthMiddleware:
     async def __call__(self, scope, receive, send):
         token = decode_auth_token(scope)
         if token:
-            logger.debug(f'load_user:token:  {token}')
+            logger.debug(f'TokenAuthMiddleware:__call__:token:  {token}')
             user = await self.get_user(token["id"])
         else:
             user = AnonymousUser()

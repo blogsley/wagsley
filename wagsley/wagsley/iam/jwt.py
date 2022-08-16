@@ -21,11 +21,11 @@ def encode_auth_token(**kwargs):
 
     return jwt.encode(payload, SECRET_KEY, algorithm="HS256")
 
-def load_user(info):
+async def load_user(info):
     request = info.context["request"]
     token = decode_auth_token(request)
     logger.debug(f'load_user:token:  {token}')
-    return User.objects.get(id=token["id"])
+    return await User.objects.aget(id=token["id"])
 
 
 def decode_auth_token(scope):
