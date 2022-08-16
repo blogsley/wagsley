@@ -1,0 +1,3 @@
+[submodule "blogsley"]
+	path = blogsley
+	url = https://github.com/blogsley/blogsley
