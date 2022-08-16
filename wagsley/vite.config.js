@@ -12,7 +12,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 const root = path.resolve('../blogsley/packages/blogsley')
 const envDir = path.resolve(__dirname, './src/config')
 const outDir = path.resolve(__dirname, './wagsley/static/admin')
-const publicDir = path.resolve(root, '/public')
+const publicDir = path.resolve(root, './public')
 const base = '/admin/'
 
 console.log(path.resolve(root, './src'))
@@ -26,7 +26,11 @@ export default defineConfig({
   },
   publicDir,
   //base,
-
+  server: { //Need this to serve from the blogsley submodule
+    fs: {
+      strict: false
+    }
+  },
   plugins: [
     ViteAliases({
       dir: path.resolve(root, './src'),
