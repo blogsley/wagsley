@@ -1,0 +1,13 @@
+{
+    "name": "wagsley",
+    "private": true,
+    "dependencies": {},
+    "devDependencies": {
+      "lerna": "^5.4.2"
+    },
+    "resolutions": {},
+    "workspaces": [
+      "blogsley/packages/*",
+      "wagsley"
+    ]
+  }

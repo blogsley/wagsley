@@ -9,7 +9,7 @@ import path from 'path'
 
 import { VitePWA } from 'vite-plugin-pwa'
 
-const root = path.resolve('../../packages/blogsley')
+const root = path.resolve('../blogsley/packages/blogsley')
 const envDir = path.resolve(__dirname, './src/config')
 const outDir = path.resolve(__dirname, './wagsley/static/admin')
 const publicDir = path.resolve(root, '/public')

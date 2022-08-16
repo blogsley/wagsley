@@ -1,0 +1,10 @@
+{
+    "packages": [
+      "blogsley/packages/*",
+      "wagsley"
+    ],
+    "version": "5.4.2",
+    "npmClient": "yarn",
+    "useWorkspaces": true
+  }
+  
