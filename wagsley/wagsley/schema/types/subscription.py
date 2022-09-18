@@ -1,1 +1,1 @@
-from posts.subscription import *
+from blog.subscription import *

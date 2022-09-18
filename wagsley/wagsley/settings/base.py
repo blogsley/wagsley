@@ -95,6 +95,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(PROJECT_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'blog', 'templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -209,7 +210,7 @@ BASE_URL = 'https://wagsley.com'
 
 PUPUT_AS_PLUGIN = True
 PUPUT_COMMENTS_PROVIDER = "puput.comments.DjangoCommentsProvider"
-PUPUT_ENTRY_MODEL = 'wagsley.models.PostAbstract'
+PUPUT_ENTRY_MODEL = 'blog.abstracts.EntryAbstract'
 
 SITE_ID = 1
 

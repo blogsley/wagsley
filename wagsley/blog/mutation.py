@@ -26,7 +26,7 @@ async def resolve_create_post(_, info, data):
     
     #post = await Post.objects.acreate(title=title, block=block, body=body) #Can't: causes validation error
 
-    post = await sync_to_async(Post)(title=title, block=block, body=body)
+    post = await sync_to_async(Post)(owner=user, title=title, block=block, body=body)
     await sync_to_async(blog.add_child)(instance=post)
     await sync_to_async(blog.save)()
 

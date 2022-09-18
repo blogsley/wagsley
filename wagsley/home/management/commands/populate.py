@@ -4,7 +4,7 @@ from django.contrib.sites.models import Site
 from django.conf import settings
 
 from accounts.models import User
-from posts.models import Post
+from blog.models import Post
 
 class Command(BaseCommand):
     help = 'Populate Database'

@@ -151,6 +151,19 @@ html5lib = ["html5lib"]
 lxml = ["lxml"]
 
 [[package]]
+name = "bleach"
+version = "3.3.1"
+description = "An easy safelist-based HTML-sanitizing tool."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.dependencies]
+packaging = "*"
+six = ">=1.9.0"
+webencodings = "*"
+
+[[package]]
 name = "certifi"
 version = "2022.6.15"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -656,6 +669,17 @@ python-versions = ">=3.6"
 et-xmlfile = "*"
 
 [[package]]
+name = "packaging"
+version = "21.3"
+description = "Core utilities for Python packages"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+pyparsing = ">=2.0.2,<3.0.5 || >3.0.5"
+
+[[package]]
 name = "pillow"
 version = "9.2.0"
 description = "Python Imaging Library (Fork)"
@@ -755,6 +779,17 @@ cryptography = ">=35.0"
 [package.extras]
 test = ["pytest (>=3.0.1)", "pretend", "flaky"]
 docs = ["sphinx-rtd-theme", "sphinx"]
+
+[[package]]
+name = "pyparsing"
+version = "3.0.9"
+description = "pyparsing module - Classes and methods to define and execute parsing grammars"
+category = "main"
+optional = false
+python-versions = ">=3.6.8"
+
+[package.extras]
+diagrams = ["railroad-diagrams", "jinja2"]
 
 [[package]]
 name = "pyppeteer"
@@ -1068,6 +1103,19 @@ docs = ["pyenchant (>=3.1.1,<4)", "sphinxcontrib-spelling (>=5.4.0,<6)", "Sphinx
 testing = ["python-dateutil (>=2.7)", "pytz (>=2014.7)", "elasticsearch (>=5.0,<6.0)", "Jinja2 (>=3.0,<3.2)", "boto3 (>=1.16,<1.17)", "freezegun (>=0.3.8)", "openpyxl (>=2.6.4)", "azure-mgmt-cdn (>=5.1,<6.0)", "azure-mgmt-frontdoor (>=0.3,<0.4)", "django-pattern-library (>=0.7,<0.8)", "coverage (>=3.7.0)", "black (==22.3.0)", "flake8 (>=3.6.0)", "isort (==5.6.4)", "flake8-blind-except (==0.1.1)", "flake8-comprehensions (==3.8.0)", "flake8-print (==5.0.0)", "doc8 (==0.8.1)", "flake8-assertive (==2.0.0)", "curlylint (==0.13.1)", "djhtml (==1.4.13)", "polib (>=1.1,<2.0)"]
 
 [[package]]
+name = "wagtail-markdown"
+version = "0.9.0"
+description = "Markdown support for Wagtail"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+bleach = ">=3.3.0,<4"
+Markdown = ">=3,<4"
+Wagtail = ">=2.15"
+
+[[package]]
 name = "webencodings"
 version = "0.5.1"
 description = "Character encoding aliases for legacy web content"
@@ -1162,7 +1210,7 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.11"
-content-hash = "196b65c05104d7304948f1d48a3c3dff1e134b27d6ad5486f721fecb08859740"
+content-hash = "7d9ba63bb6cbfa92f0071c27fa7467988c2bc85756fafaf04e1bf2d4125741e3"
 
 [metadata.files]
 anyascii = []
@@ -1176,6 +1224,7 @@ autobahn = []
 automat = []
 "backports.zoneinfo" = []
 beautifulsoup4 = []
+bleach = []
 certifi = []
 cffi = []
 channels = []
@@ -1218,6 +1267,7 @@ lxml = []
 markdown = []
 oauthlib = []
 openpyxl = []
+packaging = []
 pillow = []
 puput = []
 pyasn1 = []
@@ -1226,6 +1276,7 @@ pycparser = []
 pyee = []
 pyjwt = []
 pyopenssl = []
+pyparsing = []
 pyppeteer = []
 python3-openid = []
 pytz = []
@@ -1247,6 +1298,7 @@ typing-extensions = []
 tzdata = []
 urllib3 = []
 wagtail = []
+wagtail-markdown = []
 webencodings = []
 websockets = []
 willow = []

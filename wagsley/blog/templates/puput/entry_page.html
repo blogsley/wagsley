@@ -45,7 +45,7 @@
     <article class="page-content"
              {% if self.id %}data-entry-page-update-comments-url="{% url 'entry_page_update_comments' self.id %}{% endif %}">
         {% include 'puput/entry_page_header.html' with entry=self %}
-        <section>
+        <div>
             {% if self.header_image %}
                 <span class="image featured">
                     {% image self.header_image fill-800x450 as header_image %}
@@ -53,9 +53,10 @@
                 </span>
             {% endif %}
             {% include 'puput/entry_links.html' with entry=self %}
-        </section>
+        </div>
         <section>
-            {{ self.body|richtext}}
+            {# {{ self.body|richtext}} #}
+            {% include_block self.body %}
             <div class="row">
                 <div class="col-md-2">
                     <a href="{% pageurl blog_page %}" class="blog_btn back">

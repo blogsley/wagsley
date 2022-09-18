@@ -7,23 +7,24 @@ authors = ["Kurtis Fields <kurtisfields@gmail.com>"]
 [tool.poetry.dependencies]
 python = ">=3.8,<3.11"
 django = "^4.1"
-#wagtail = "^3.0.1"
-wagtail = "^4.0.rc1"
+ariadne-django = "^0.3.0"
+django-cors-headers = "^3.13.0"
 django-colorful = "^1.3"
 django-el-pagination = "^3.3.0"
 django-social-share = "^2.3.0"
-#puput = "^1.1.3"
-puput = {git = "https://github.com/kfields/puput.git", rev = "v2"}
 django-allauth = "^0.51.0"
 django-crispy-forms = "^1.14.0"
 crispy-bootstrap5 = "^0.6"
 django-avatar = "^6.0.1"
 django-comments-xtd = "^2.9.7"
-ariadne-django = "^0.3.0"
+
+puput = {git = "https://github.com/kfields/puput.git", rev = "v2"}
+wagtail = "^4.0.rc1"
+wagtail-markdown = "^0.9.0"
+
 lxml = "^4.9.1"
 channels = "^3.0.5"
 loguru = "^0.6.0"
-django-cors-headers = "^3.13.0"
 Markdown = "^3.4.1"
 html5lib = "^1.1"
 
