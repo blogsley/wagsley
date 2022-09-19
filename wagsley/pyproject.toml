@@ -6,7 +6,7 @@ authors = ["Kurtis Fields <kurtisfields@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.11"
-django = "^4.1"
+django = "^4.1.1"
 ariadne-django = "^0.3.0"
 django-cors-headers = "^3.13.0"
 django-colorful = "^1.3"
@@ -19,7 +19,7 @@ django-avatar = "^6.0.1"
 django-comments-xtd = "^2.9.7"
 
 puput = {git = "https://github.com/kfields/puput.git", rev = "v2"}
-wagtail = "^4.0.rc1"
+wagtail = "^4.0.1"
 wagtail-markdown = "^0.9.0"
 
 lxml = "^4.9.1"

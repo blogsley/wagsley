@@ -6,7 +6,6 @@ from django.utils.translation import gettext_lazy as _
 from wagtail.core.fields import StreamField
 from wagtail.admin.edit_handlers import StreamFieldPanel
 from wagtail.admin.edit_handlers import FieldPanel, MultiFieldPanel, InlinePanel, PageChooserPanel
-from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.core.fields import RichTextField
 from modelcluster.contrib.taggit import ClusterTaggableManager
 

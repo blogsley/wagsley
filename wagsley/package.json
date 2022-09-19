@@ -16,20 +16,19 @@
     "migrate": "python manage.py migrate",
     "runserver": "python manage.py runserver",
     "dump": "python manage.py dumpdata --indent 2 > dump.json",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "git push dokku master"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blogsley/blogsley-django.git"
+    "url": "git+https://github.com/blogsley/wagsley.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kfields/blogsley-django/issues"
+    "url": "https://github.com/blogsley/wagsley/issues"
   },
-  "homepage": "https://github.com/kfields/blogsley-django#readme",
+  "homepage": "https://github.com/blogsley/wagsley#readme",
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
